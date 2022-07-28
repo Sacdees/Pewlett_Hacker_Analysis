@@ -11,4 +11,58 @@ FROM emp_info as em
 		ON(em.emp_no = ti.emp_no)
 ORDER BY em.emp_no;	
 
-------------------------------
+select * from retro_titles
+select * from unique_titles
+
+------------------------------  To check that to date is 9999-01-01
+-- Use Dictinct with Orderby to remove duplicate rows
+SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
+rt.first_name,
+rt.last_name,
+rt.title,
+rt.to_date
+--INTO unique_titles
+FROM retro_titles as rt
+WHERE rt.to_date between '9999-01-01' and '9999-01-01'
+ORDER BY rt.emp_no, rt.to_date DESC;
+------------------- for challenge point-----unique_titles
+SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
+rt.first_name,
+rt.last_name,
+rt.title
+INTO unique_titles
+FROM retro_titles as rt
+WHERE rt.to_date between '9999-01-01' and '9999-01-01'
+ORDER BY rt.emp_no, rt.to_date DESC;
+
+--------------------------challenge oint----------retiring_titles
+
+select * from unique_titles
+select * from retiring_titles
+
+
+
+SELECT Count (ut.title), ut.title
+INTO retiring_titles
+FROM unique_titles as ut
+group by ut.title;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
