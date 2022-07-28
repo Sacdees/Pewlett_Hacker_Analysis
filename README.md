@@ -24,5 +24,6 @@ We were also able to produce some data for potential mentorship candidates.  Wit
 
 ## Summary
 
+Overall based on the analysis, the company has made some very important first steps to making sure they are covered or future-proofing positions that otherwise may go unfilled.  Especially with the boomers wrapping up their retirment boom, it is extra important that the company stay vigilate and proactive to recruiting and/or moving people into mentorship programs BEFORE the current talent is no longer working.  
 
 
